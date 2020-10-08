@@ -1,7 +1,7 @@
 {
-	"name": "kitty",
-	"displayName": "kitty",
-	"description": "",
+	"name": "cocos-creator-assistant",
+	"displayName": "cocos creator 小助手",
+	"description": "更加便捷的使用论坛、文档、商店",
 	"version": "0.0.1",
 	"engines": {
 		"vscode": "^0.10.5"
@@ -10,25 +10,29 @@
 		"Other"
 	],
 	"activationEvents": [
-		"onCommand:kitty.helloWorld"
+		"*"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
 		"menus": {
 			"view/title": [
 				{
-					"command": "kitty.helloWorld"
+					"command": "assistant.openForum"
 				}
 			]
 		},
 		"commands": [
 			{
-				"command": "kitty.helloWorld",
-				"title": "Hello World kitty"
+				"command": "assistant.openForum",
+				"title": "cc-forum"
 			},
 			{
-				"command": "kitty.go",
-				"title": "kitty go"
+				"command": "assistant.openDocs",
+				"title": "cc-docs"
+			},
+			{
+				"command": "assistant.openSell",
+				"title": "cc-sell"
 			}
 		]
 	},
