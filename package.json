@@ -4,7 +4,7 @@
 	"description": "更加便捷的使用论坛、文档、商店",
 	"version": "0.0.1",
 	"engines": {
-		"vscode": "^0.10.5"
+		"vscode": "^1.49.0"
 	},
 	"categories": [
 		"Other"
@@ -36,6 +36,7 @@
 			}
 		]
 	},
+	"publisher": "xuyanfeng",
 	"scripts": {
 		"vscode:prepublish": "npm run compile",
 		"compile": "tsc -p ./",
