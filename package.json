@@ -2,17 +2,22 @@
 	"name": "cocos-creator-assistant",
 	"displayName": "cocos creator 小助手",
 	"description": "更加便捷的使用论坛、文档、商店",
-	"version": "0.0.1",
+	"version": "0.0.3",
 	"engines": {
 		"vscode": "^1.49.0"
 	},
 	"categories": [
 		"Other"
 	],
+	"icon": "images/icon128x128.png",
 	"activationEvents": [
 		"*"
 	],
 	"main": "./out/extension.js",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/tidys/cc-assistant"
+	},
 	"contributes": {
 		"menus": {
 			"view/title": [
@@ -43,8 +48,15 @@
 		"lint": "eslint src --ext ts",
 		"watch": "tsc -watch -p ./",
 		"pretest": "npm run compile && npm run lint",
-		"test": "node ./out/test/runTest.js"
+		"test": "node ./out/test/runTest.js",
+		"publish": "vsce publish"
 	},
+	"keywords": [
+		"cc",
+		"cocos",
+		"cocoscreator",
+		"cocos creator"
+	],
 	"devDependencies": {
 		"@types/vscode": "^1.49.0",
 		"@types/glob": "^7.1.3",
