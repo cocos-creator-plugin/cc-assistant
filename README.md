@@ -7,4 +7,5 @@ vs-code 插件，快速打开creator论坛、文档、插件商店
 欢迎加入cocos creator 插件QQ群：224756137
 
 欢迎关注个人微信公众号
+
 ![](qq.jpg)
